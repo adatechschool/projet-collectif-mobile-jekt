@@ -7,11 +7,12 @@
     android:orientation="vertical"
     tools:context=".LoutreFragment">
 
-    <Button
+   <!-- <Button
         android:id="@+id/ReturnList"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:text="return"/>
+        -->
 
     <TextView
         android:id="@+id/Castagnette"
