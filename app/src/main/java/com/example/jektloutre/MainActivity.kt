@@ -1,22 +1,8 @@
 package com.example.jektloutre
 
 
-import android.graphics.drawable.Drawable
-import androidx.core.content.ContextCompat
-import android.widget.ArrayAdapter
-import android.widget.ImageView
-import android.widget.ListView
-import android.widget.TextView
-import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,14 +10,30 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Définir le layout principal de l'activité
         setContentView(R.layout.activity_main)
-        // Commencer une transaction de fragment
+
+        // Vérifier si c'est la première ouverture de l'application
+        if (isFirstTimeLaunch()) {
+            // Si c'est la première fois, charger le fragment HomeFragment
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, HomeFragment())
+                .commit()
+        } else {
+            // Si ce n'est pas la première fois, charger directement le fragment LoutreListFragment
+            loadLoutreListFragment()
+        }
+    }
+
+    private fun isFirstTimeLaunch(): Boolean {
+        return true
+    }
+
+    private fun loadLoutreListFragment() {
+        // Charger le fragment LoutreListFragment dans le conteneur
         supportFragmentManager.beginTransaction()
-            // Remplacer le fragment actuel dans le conteneur par un nouveau fragment LoutreListFragment
             .replace(R.id.fragment_container, LoutreListFragment())
-            // Valider la transaction pour qu'elle soit appliquée
             .commit()
+    }
 
         /* ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -41,6 +43,5 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.show_profile)
         button.setOnClickListener { startActivity(Intent(applicationContext,LoutreFragment::class.java))
         }*/
-    }
-
 }
+
