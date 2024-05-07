@@ -52,10 +52,16 @@ class LoutreDetailFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_loutre_detail, container, false)
-        val loutreView = view.findViewById<TextView>(R.id.oneNameView)
+        //val loutreNameView = view.findViewById<TextView>(R.id.oneNameView)
         val loutreIndex = arguments?.getInt(ARG_LOUTRE_INDEX)?: return view
         val loutre = LoutreListFragment().loutres[loutreIndex]
-        loutreView.text = loutre.nom
+        val loutreNameView = view.findViewById<TextView>(R.id.oneNameView)
+        loutreNameView.text = loutre.nom
+        val loutreImageView = view.findViewById<TextView>(R.id.oneImageView)
+        loutreImageView.text = loutre.image
+        val loutreLocationView = view.findViewById<TextView>(R.id.oneLocationView)
+        loutreLocationView.text = loutre.lieu
+
         return view
     }
 }
