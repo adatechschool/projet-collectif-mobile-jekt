@@ -12,8 +12,15 @@ import androidx.recyclerview.widget.RecyclerView
 class LoutreListFragment : Fragment(), LoutreListAdapter.OnLoutreItemClickListener {
     val loutres = listOf(
         Loutre(R.drawable.castagnette, "Castagnette","Russie"),
-        Loutre(R.drawable.chilly, "Chilly","Japon"),
-        Loutre(R.drawable.jennyetfluffy,"Jenny et Fluffy","Canada")
+        Loutre(R.drawable.chilly, "Chilly","Canada"),
+        Loutre(R.drawable.jennyetfluffy,"Jenny et Fluffy","Japon"),
+        Loutre(R.drawable.pichoune, "Pichoune", "France"),
+        Loutre(R.drawable.donna, "Donna", "Californie"),
+        Loutre(R.drawable.chouchou, "Chouchou", "Irlande"),
+        Loutre(R.drawable.moka, "Moka", "Japon"),
+        Loutre(R.drawable.coco, "Coco", "Alaska"),
+        Loutre(R.drawable.maria, "Maria", "France"),
+        Loutre(R.drawable.galopin, "Galopin", "France")
     )
 
     /* override fun onCreate(savedInstanceState: Bundle?) {
