@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 // Liste des objets loutres avec leurs attribues
 class LoutreListFragment : Fragment(), LoutreListAdapter.OnLoutreItemClickListener {
     val loutres = listOf(
-        Loutre("photo", "Loutre 1","Russia"),
+        Loutre("photo", "Loutre 1","Russie"),
         Loutre("photo", "Loutre 2","Japon"),
         Loutre("photo","Loutre 3","Canada")
     )
@@ -45,3 +45,4 @@ class LoutreListFragment : Fragment(), LoutreListAdapter.OnLoutreItemClickListen
             ?.commit()
     }
 }
+
