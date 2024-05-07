@@ -11,9 +11,9 @@ import androidx.recyclerview.widget.RecyclerView
 // Liste des objets loutres avec leurs attribues
 class LoutreListFragment : Fragment(), LoutreListAdapter.OnLoutreItemClickListener {
     val loutres = listOf(
-        Loutre("photo", "Castagnette","Russie"),
-        Loutre("photo", "Chilly","Japon"),
-        Loutre("photo","Jenny et Fluffy","Canada")
+        Loutre(R.drawable.castagnette, "Castagnette","Russie"),
+        Loutre(R.drawable.chilly, "Chilly","Japon"),
+        Loutre(R.drawable.jennyetfluffy,"Jenny et Fluffy","Canada")
     )
 
     /* override fun onCreate(savedInstanceState: Bundle?) {

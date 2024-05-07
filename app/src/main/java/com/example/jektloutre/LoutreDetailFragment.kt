@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 
@@ -57,8 +58,9 @@ class LoutreDetailFragment : Fragment() {
         val loutre = LoutreListFragment().loutres[loutreIndex]
         val loutreNameView = view.findViewById<TextView>(R.id.oneNameView)
         loutreNameView.text = loutre.nom
-        val loutreImageView = view.findViewById<TextView>(R.id.oneImageView)
-        loutreImageView.text = loutre.image
+        val loutreImageView = view.findViewById<ImageView>(R.id.oneImageView)
+        val image = loutre.image
+        loutreImageView.setImageResource(image)
         val loutreLocationView = view.findViewById<TextView>(R.id.oneLocationView)
         loutreLocationView.text = loutre.lieu
 
