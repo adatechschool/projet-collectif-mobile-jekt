@@ -1,31 +1,113 @@
-### Post "Hello!"
+### Post "Castagnette!"
 POST http://localhost:8080/
 Content-Type: application/json
 
 {
-  "text": "Hello!"
+  "nom": "Castagnette",
+  "image": "Ceci est une image",
+  "lieu": "Russie"
 }
 
-### Post "Bonjour!"
-
-POST http://localhost:8080/
-Content-Type: application/json
-
-{
-  "text": "Bonjour!"
-}
-
-### Post "Privet!"
+### Post "Chilly!"
 
 POST http://localhost:8080/
 Content-Type: application/json
 
 {
-  "text": "Privet!"
+  "nom": "Chilly",
+  "image": "Ceci est une image",
+  "lieu": "Canada"
 }
 
+### Post "Chouchou!"
+
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "nom": "Chouchou",
+  "image": "Ceci est une image",
+  "lieu": "Irlande"
+}
+### Post "Coco!"
+
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+"nom": "Coco",
+"image": "Ceci est une image",
+"lieu": "Alaska"
+}
+
+### Post "Jenny et Fluffy!"
+
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+"nom": "Jenny et Fluffy",
+"image": "Ceci est une image",
+"lieu": "Japon"
+}
+
+### Post "Pichoune!"
+
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "nom": "Pichoune",
+  "image": "Ceci est une image",
+  "lieu": "France"
+}
+
+### Post "Donna!"
+
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "nom": "Donna",
+  "image": "Ceci est une image",
+  "lieu": "Californie"
+}
+
+### Post "Moka!"
+
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "nom": "Moka",
+  "image": "Ceci est une image",
+  "lieu": "Japon"
+}
+
+### Post "Maria!"
+
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "nom": "Maria",
+  "image": "Ceci est une image",
+  "lieu": "France"
+}
+
+### Post "Galopin!"
+
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "nom": "Galopin",
+  "image": "Ceci est une image",
+  "lieu": "France"
+}
 ### Get all the messages
 GET http://localhost:8080/
 
-###
+### Get all the messages
+
 GET http://localhost:8080/id
