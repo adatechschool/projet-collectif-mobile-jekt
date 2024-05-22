@@ -18,32 +18,32 @@ fun main(args: Array<String>) {
 }
 
 @RestController
-class MessageController(val service: MessageService) {
+class LoutreController(val service: LoutreService) {
     @GetMapping("/")
-    fun index(): List<Message> = service.findMessages()
+    fun index(): List<TableLoutre> = service.findLoutre()
 
     @GetMapping("/{id}")
-    fun index(@PathVariable id: String): List<Message> =
-        service.findMessageById(id)
+    fun index(@PathVariable id: String): List<TableLoutre> =
+        service.findLoutreById(id)
 
     @PostMapping("/")
-    fun post(@RequestBody message: Message) {
+    fun post(@RequestBody message: TableLoutre) {
         service.save(message)
     }
 }
 
-interface MessageRepository : CrudRepository<Message, String>
+interface LoutreRepository : CrudRepository<TableLoutre, String>
 
-@Table("MESSAGES")
-data class Message(@Id var id: String?, val text: String)
+@Table("LOUTRES")
+data class TableLoutre(@Id var id: String?, val nom: String, val image: String, val lieu: String)
 
 @Service
-class MessageService(val db: MessageRepository) {
-    fun findMessages(): List<Message> = db.findAll().toList()
+class LoutreService(val db: LoutreRepository) {
+    fun findLoutre(): List<TableLoutre> = db.findAll().toList()
 
-    fun findMessageById(id: String): List<Message> = db.findById(id).toList()
+    fun findLoutreById(id: String): List<TableLoutre> = db.findById(id).toList()
 
-    fun save(message: Message) {
+    fun save(message: TableLoutre) {
         db.save(message)
     }
 
