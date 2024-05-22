@@ -1,4 +1,6 @@
-CREATE TABLE IF NOT EXISTS messages (
-    id       VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY,
-    text     VARCHAR      NOT NULL
+CREATE TABLE IF NOT EXISTS loutres (
+    id     CHAR(36) DEFAULT (UUID()) PRIMARY KEY,
+    nom    VARCHAR(255) NOT NULL,
+    image  VARCHAR(255) NOT NULL,
+    lieu   VARCHAR(255) NOT NULL
     );
