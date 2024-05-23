@@ -1,0 +1,150 @@
+POST http://localhost:8080
+Content-Type: application/json
+Content-Length: 75
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "nom": "Galopin",
+  "image": "Ceci est une image",
+  "lieu": "France"
+}
+
+###
+
+POST http://localhost:8080
+Content-Type: application/json
+Content-Length: 73
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "nom": "Maria",
+  "image": "Ceci est une image",
+  "lieu": "France"
+}
+
+###
+
+POST http://localhost:8080
+Content-Type: application/json
+Content-Length: 71
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "nom": "Moka",
+  "image": "Ceci est une image",
+  "lieu": "Japon"
+}
+
+###
+
+POST http://localhost:8080
+Content-Type: application/json
+Content-Length: 77
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "nom": "Donna",
+  "image": "Ceci est une image",
+  "lieu": "Californie"
+}
+
+###
+
+POST http://localhost:8080
+Content-Type: application/json
+Content-Length: 76
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "nom": "Pichoune",
+  "image": "Ceci est une image",
+  "lieu": "France"
+}
+
+###
+
+POST http://localhost:8080
+Content-Type: application/json
+Content-Length: 76
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"nom": "Jenny et Fluffy",
+"image": "Ceci est une image",
+"lieu": "Japon"
+}
+
+###
+
+POST http://localhost:8080
+Content-Type: application/json
+Content-Length: 66
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+"nom": "Coco",
+"image": "Ceci est une image",
+"lieu": "Alaska"
+}
+
+###
+
+POST http://localhost:8080
+Content-Type: application/json
+Content-Length: 77
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "nom": "Chouchou",
+  "image": "Ceci est une image",
+  "lieu": "Irlande"
+}
+
+###
+
+POST http://localhost:8080
+Content-Type: application/json
+Content-Length: 74
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "nom": "Chilly",
+  "image": "Ceci est une image",
+  "lieu": "Canada"
+}
+
+###
+
+POST http://localhost:8080
+Content-Type: application/json
+Content-Length: 79
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "nom": "Castagnette",
+  "image": "Ceci est une image",
+  "lieu": "Russie"
+}
+
+###
+

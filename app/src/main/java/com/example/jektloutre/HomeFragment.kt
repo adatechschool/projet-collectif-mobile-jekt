@@ -21,7 +21,7 @@ class HomeFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         val textView = view.findViewById<TextView>(R.id.test)
         val apiService = ApiService()
-        val url = "http://192.168.137.1:8080" //ip wifi de son ordi à modifier en fonction du poste
+        val url = "http://192.168.7.178:8080" //ip wifi de son ordi à modifier en fonction du poste
 
         Thread {
             val result = apiService.fetchData(url)
